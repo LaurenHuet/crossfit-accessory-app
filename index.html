@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Accessory Coach" />
+  <title>Accessory Coach</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">CrossFit + Olympic lifting</p>
+        <h1>Accessory Coach</h1>
+      </div>
+      <button class="icon-button" id="installButton" hidden>Install</button>
+    </header>
+
+    <main>
+      <section class="hero-card">
+        <div>
+          <h2>Fill the gaps without doubling up.</h2>
+          <p>Your gym owns the main lifting. This app chooses the extra work based on what class already gave you.</p>
+        </div>
+        <div class="hero-stats" id="heroStats"></div>
+      </section>
+
+      <nav class="tabs" aria-label="App sections">
+        <button data-tab="today" class="active">Today</button>
+        <button data-tab="program">Program</button>
+        <button data-tab="mobility">Mobility</button>
+        <button data-tab="tracker">Tracker</button>
+        <button data-tab="tests">Tests</button>
+        <button data-tab="aicoach">AI Coach</button>
+      </nav>
+
+      <section id="today" class="tab-panel active"></section>
+      <section id="program" class="tab-panel"></section>
+      <section id="mobility" class="tab-panel"></section>
+      <section id="tracker" class="tab-panel"></section>
+      <section id="tests" class="tab-panel"></section>
+      <section id="aicoach" class="tab-panel"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

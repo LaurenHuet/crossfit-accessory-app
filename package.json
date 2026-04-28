@@ -1,0 +1,15 @@
+{
+  "name": "crossfit-accessory-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  },
+  "devDependencies": {
+    "netlify-cli": "latest"
+  }
+}
