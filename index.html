@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#07090f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Accessory Coach" />
@@ -11,6 +11,9 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,20 +27,15 @@
     </header>
 
     <main>
-      <section class="hero-card">
-        <div>
-          <h2>Fill the gaps without doubling up.</h2>
-          <p>Your gym owns the main lifting. This app chooses the extra work based on what class already gave you.</p>
-        </div>
+      <div class="hero-card">
         <div class="hero-stats" id="heroStats"></div>
-      </section>
+      </div>
 
       <nav class="tabs" aria-label="App sections">
         <button data-tab="today" class="active">Today</button>
         <button data-tab="program">Program</button>
         <button data-tab="mobility">Mobility</button>
         <button data-tab="tracker">Tracker</button>
-        <button data-tab="tests">Tests</button>
         <button data-tab="aicoach">AI Coach</button>
       </nav>
 
@@ -45,7 +43,6 @@
       <section id="program" class="tab-panel"></section>
       <section id="mobility" class="tab-panel"></section>
       <section id="tracker" class="tab-panel"></section>
-      <section id="tests" class="tab-panel"></section>
       <section id="aicoach" class="tab-panel"></section>
     </main>
   </div>
