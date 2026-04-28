@@ -792,7 +792,7 @@ function bindTabs() {
     if (TAB_ICONS[tab]) {
       btn.innerHTML = `<span class="tab-icon">${TAB_ICONS[tab]}</span>${btn.textContent.trim()}`;
     }
-    btn.onclick = () => { state.activeTab = btn.dataset.tab; saveState(); updateTabVisibility(); };
+    btn.onclick = () => { state.activeTab = btn.dataset.tab; saveState(); renderAll(); };
   });
 }
 
